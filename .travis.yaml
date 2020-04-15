@@ -9,8 +9,6 @@ services:
 before_install:
   - docker build -t raghvendra/node-react -f Dockerfile.dev .
 
-script:
-  - docker run raghvendra/node-react npm run test -- --coverage
 
 deploy:
   provider: elasticbeantalk
