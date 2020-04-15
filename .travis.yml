@@ -1,7 +1,10 @@
 sudo: required
 
 language:
-  - node_js
+  - ruby
+  rvm:
+    - 2.2
+    - jruby
 
 services:
   - docker
